@@ -1,0 +1,94 @@
+{
+    "StoreName": "Goody's",
+    "Latitude": 37.9838,
+    "Longitude": 23.7275,
+    "FoodCategory": "burger",
+    "Stars": 4.5,
+    "NoOfVotes": 170,
+    "StoreLogo": "logos/goodys.png",
+    "Products": [
+        {
+            "ProductName": "cheeseburger",
+            "ProductType": "burger",
+            "Available Amount": 170,
+            "Price": 3.5
+          },
+          {
+            "ProductName": "humburger",
+            "ProductType": "burger",
+            "Available Amount": 190,
+            "Price": 3
+          },
+          {
+            "ProductName": "greenburger",
+            "ProductType": "burger",
+            "Available Amount": 120,
+            "Price": 4.7
+          },
+          {
+            "ProductName": "goldenburger",
+            "ProductType": "burger",
+            "Available Amount": 100,
+            "Price": 5
+          },
+        {
+            "ProductName": "caesar salad",
+            "ProductType": "salad",
+            "Available Amount": 160,
+            "Price": 6.6
+          },
+          {
+            "ProductName": "extreme chick n crisp",
+            "ProductType": "burger",
+            "Available Amount": 160,
+            "Price": 6.3
+          },
+          {
+            "ProductName": "fries country style",
+            "ProductType": "fries",
+            "Available Amount": 170,
+            "Price": 4
+          },
+          {
+            "ProductName": "fries classic",
+            "ProductType": "fries",
+            "Available Amount": 190,
+            "Price": 3.8
+          },
+          
+          {
+            "ProductName": "greek salad",
+            "ProductType": "salad",
+            "Available Amount": 120,
+            "Price": 5.8
+          },
+          {
+            "ProductName": "coca-cola 330ml",
+            "ProductType": "drink",
+            "Available Amount": 200,
+            "Price": 1.5
+          },
+          {
+            "ProductName": "sprite 330ml",
+            "ProductType": "drink",
+            "Available Amount": 150,
+            "Price": 1.5
+          },
+          {
+            "ProductName": "lemonade",
+            "ProductType": "drink",
+            "Available Amount": 100,
+            "Price": 2
+          },
+          {
+            "ProductName": "orange juice",
+            "ProductType": "drink",
+            "Available Amount": 90,
+            "Price": 2
+          }
+    
+      
+      
+
+
+    ]}

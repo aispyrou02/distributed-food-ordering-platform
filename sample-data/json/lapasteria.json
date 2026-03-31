@@ -1,0 +1,96 @@
+{
+    "StoreName": "La Pasteria",
+    "Latitude": 37.9813,
+    "Longitude": 23.7352,
+    "FoodCategory": "italian",
+    "Stars": 4.5,
+    "NoOfVotes": 620,
+    "StoreLogo": "logos/lapasteria.jpeg",
+    "Products": [
+      {
+        "ProductName": "carbonara",
+        "ProductType": "pasta",
+        "Available Amount": 150,
+        "Price": 9.8
+      },
+      {
+        "ProductName": "penne arrabbiata",
+        "ProductType": "pasta",
+        "Available Amount": 130,
+        "Price": 8.5
+      },
+      {
+        "ProductName": "tagliatelle alfredo",
+        "ProductType": "pasta",
+        "Available Amount": 120,
+        "Price": 10
+      },
+      {
+        "ProductName": "spaghetti bolognese",
+        "ProductType": "pasta",
+        "Available Amount": 140,
+        "Price": 9.5
+      },
+      {
+        "ProductName": "ravioli ricotta & spinach",
+        "ProductType": "pasta",
+        "Available Amount": 110,
+        "Price": 11
+      },
+      {
+        "ProductName": "gnocchi quattro formaggi",
+        "ProductType": "pasta",
+        "Available Amount": 100,
+        "Price": 10.5
+      },
+      {
+        "ProductName": "bruschetta",
+        "ProductType": "appetizer",
+        "Available Amount": 180,
+        "Price": 4.5
+      },
+      {
+        "ProductName": "caprese salad",
+        "ProductType": "salad",
+        "Available Amount": 160,
+        "Price": 6
+      },
+      {
+        "ProductName": "caesar salad",
+        "ProductType": "salad",
+        "Available Amount": 150,
+        "Price": 6.8
+      },
+      {
+        "ProductName": "prosciutto pizza",
+        "ProductType": "pizza",
+        "Available Amount": 90,
+        "Price": 11.5
+      },
+      {
+        "ProductName": "margherita pizza",
+        "ProductType": "pizza",
+        "Available Amount": 100,
+        "Price": 9.5
+      },
+      {
+        "ProductName": "red wine (glass)",
+        "ProductType": "drink",
+        "Available Amount": 100,
+        "Price": 3.5
+      },
+      {
+        "ProductName": "white wine (glass)",
+        "ProductType": "drink",
+        "Available Amount": 100,
+        "Price": 3.5
+      },
+      {
+        "ProductName": "sparkling water",
+        "ProductType": "drink",
+        "Available Amount": 150,
+        "Price": 1.5
+      }
+    ]
+  }
+  

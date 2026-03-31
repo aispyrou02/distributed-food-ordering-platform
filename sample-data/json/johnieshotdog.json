@@ -1,0 +1,102 @@
+{
+    "StoreName": "Johnie's Hot Dog",
+    "Latitude": 37.9762,
+    "Longitude": 23.7439,
+    "FoodCategory": "canteen",
+    "Stars": 4.6,
+    "NoOfVotes": 510,
+    "StoreLogo": "logos/johnieshotdog.jpeg",
+    "Products": [
+      {
+        "ProductName": "classic hot dog",
+        "ProductType": "hotdog",
+        "Available Amount": 300,
+        "Price": 2.8
+      },
+      {
+        "ProductName": "cheese hot dog",
+        "ProductType": "hotdog",
+        "Available Amount": 250,
+        "Price": 3.2
+      },
+      {
+        "ProductName": "bacon hot dog",
+        "ProductType": "hotdog",
+        "Available Amount": 220,
+        "Price": 3.5
+      },
+      {
+        "ProductName": "spicy hot dog",
+        "ProductType": "hotdog",
+        "Available Amount": 200,
+        "Price": 3.6
+      },
+      {
+        "ProductName": "double hot dog",
+        "ProductType": "hotdog",
+        "Available Amount": 180,
+        "Price": 4.5
+      },
+      {
+        "ProductName": "veggie hot dog",
+        "ProductType": "vegetarian",
+        "Available Amount": 150,
+        "Price": 3.2
+      },
+      {
+        "ProductName": "french fries",
+        "ProductType": "side",
+        "Available Amount": 220,
+        "Price": 2
+      },
+      {
+        "ProductName": "cheese fries",
+        "ProductType": "side",
+        "Available Amount": 180,
+        "Price": 2.8
+      },
+      {
+        "ProductName": "onion rings",
+        "ProductType": "side",
+        "Available Amount": 160,
+        "Price": 2.5
+      },
+      {
+        "ProductName": "chicken nuggets",
+        "ProductType": "side",
+        "Available Amount": 150,
+        "Price": 4
+      },
+      {
+        "ProductName": "coca-cola",
+        "ProductType": "drink",
+        "Available Amount": 200,
+        "Price": 2
+      },
+      {
+        "ProductName": "sprite",
+        "ProductType": "drink",
+        "Available Amount": 180,
+        "Price": 2
+      },
+      {
+        "ProductName": "fanta",
+        "ProductType": "drink",
+        "Available Amount": 170,
+        "Price": 2
+      },
+      {
+        "ProductName": "red bull",
+        "ProductType": "drink",
+        "Available Amount": 100,
+        "Price": 3
+      },
+      {
+        "ProductName": "bottled water 500ml",
+        "ProductType": "drink",
+        "Available Amount": 300,
+        "Price": 0.5
+      }
+    ]
+  }
+  

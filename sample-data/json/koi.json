@@ -1,0 +1,102 @@
+{
+    "StoreName": "Koi Sushi Bar",
+    "Latitude": 37.9786,
+    "Longitude": 23.7352,
+    "FoodCategory": "asian",
+    "Stars": 4.7,
+    "NoOfVotes": 880,
+    "StoreLogo": "logos/koi.png",
+    "Products": [
+      {
+        "ProductName": "salmon nigiri (2pcs)",
+        "ProductType": "sushi",
+        "Available Amount": 150,
+        "Price": 4.5
+      },
+      {
+        "ProductName": "avocado nigiri (2pcs)",
+        "ProductType": "sushi",
+        "Available Amount": 140,
+        "Price": 3.8
+      },
+      {
+        "ProductName": "spicy tuna roll",
+        "ProductType": "sushi_roll",
+        "Available Amount": 130,
+        "Price": 8.9
+      },
+      {
+        "ProductName": "crispy shrimp roll",
+        "ProductType": "sushi_roll",
+        "Available Amount": 120,
+        "Price": 9.2
+      },
+      {
+        "ProductName": "philly roll",
+        "ProductType": "sushi_roll",
+        "Available Amount": 110,
+        "Price": 8.5
+      },
+      {
+        "ProductName": "koi signature roll",
+        "ProductType": "sushi_roll",
+        "Available Amount": 100,
+        "Price": 10.5
+      },
+      {
+        "ProductName": "chicken teriyaki bowl",
+        "ProductType": "main",
+        "Available Amount": 90,
+        "Price": 10.8
+      },
+      {
+        "ProductName": "poke bowl salmon",
+        "ProductType": "main",
+        "Available Amount": 85,
+        "Price": 11.5
+      },
+      {
+        "ProductName": "gyoza (vegetable - 5pcs)",
+        "ProductType": "starter",
+        "Available Amount": 100,
+        "Price": 5.2
+      },
+      {
+        "ProductName": "miso soup",
+        "ProductType": "starter",
+        "Available Amount": 110,
+        "Price": 2.8
+      },
+      {
+        "ProductName": "koi mochi trio",
+        "ProductType": "dessert",
+        "Available Amount": 70,
+        "Price": 4.5
+      },
+      {
+        "ProductName": "matcha brownie",
+        "ProductType": "dessert",
+        "Available Amount": 60,
+        "Price": 3.9
+      },
+      {
+        "ProductName": "bubble tea lychee",
+        "ProductType": "drink",
+        "Available Amount": 90,
+        "Price": 4.5
+      },
+      {
+        "ProductName": "yuzu soda",
+        "ProductType": "drink",
+        "Available Amount": 85,
+        "Price": 3.5
+      },
+      {
+        "ProductName": "asahi beer",
+        "ProductType": "drink",
+        "Available Amount": 75,
+        "Price": 4.2
+      }
+    ]
+  }
+  

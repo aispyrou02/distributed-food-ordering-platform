@@ -1,0 +1,96 @@
+
+{
+  "StoreName": "Pizza Fan",
+  "Latitude": 37.9838,
+  "Longitude": 23.7275,
+  "FoodCategory": "pizzeria",
+  "Stars": 4,
+  "NoOfVotes": 120,
+  "StoreLogo": "logos/pizzafan.jpeg",
+  "Products": [
+    {
+    "ProductName": "margarita",
+      "ProductType": "pizza",
+      "Available Amount": 500,
+      "Price": 9.2
+    },
+    {
+      "ProductName": "special",
+      "ProductType": "pizza",
+      "Available Amount": 100,
+      "Price": 12
+    },
+    {
+      "ProductName": "chef’s Salad",
+      "ProductType": "salad",
+      "Available Amount": 60,
+      "Price": 5
+    },
+    {
+      "ProductName": "pepperoni",
+      "ProductType": "pizza",
+      "Available Amount": 80,
+      "Price": 10.5
+    },
+    {
+      "ProductName": "vegetarian",
+      "ProductType": "pizza",
+      "Available Amount": 60,
+      "Price": 9.8
+    },
+    {
+      "ProductName": "prosciutto & arugula",
+      "ProductType": "pizza",
+      "Available Amount": 40,
+      "Price": 11.5
+    },
+    {
+      "ProductName": "bbq chicken",
+      "ProductType": "pizza",
+      "Available Amount": 500,
+      "Price": 10.9
+    },
+    {
+      "ProductName": "four cheese",
+      "ProductType": "pizza",
+      "Available Amount": 45,
+      "Price": 11.2
+    },
+    {
+      "ProductName": "caesar salad",
+      "ProductType": "salad",
+      "Available Amount": 80,
+      "Price": 6.5
+    },
+    {
+      "ProductName": "greek salad",
+      "ProductType": "salad",
+      "Available Amount": 90,
+      "Price": 5.8
+    },
+    {
+      "ProductName": "coca-cola 330ml",
+      "ProductType": "drink",
+      "Available Amount": 200,
+      "Price": 1.5
+    },
+    {
+      "ProductName": "sprite 330ml",
+      "ProductType": "drink",
+      "Available Amount": 150,
+      "Price": 1.5
+    },
+    {
+      "ProductName": "lemonade",
+      "ProductType": "drink",
+      "Available Amount": 100,
+      "Price": 2
+    },
+    {
+      "ProductName": "orange juice",
+      "ProductType": "drink",
+      "Available Amount": 90,
+      "Price": 2
+    }
+  ]
+}
