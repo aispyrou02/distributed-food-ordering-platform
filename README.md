@@ -1,6 +1,6 @@
 # 🚀 Distributed Food Ordering Platform
 
-A full-stack food ordering system featuring a **distributed Java backend** and a **mobile frontend**, designed using a **master–worker–reducer architecture** for scalability and parallel processing.
+A full-stack food ordering system featuring a **distributed Java backend** and a **mobile frontend**, designed using a **Master–Worker–Reducer architecture** for scalability and parallel processing.
 
 ---
 
@@ -10,119 +10,194 @@ This project simulates a real-world food delivery platform where:
 
 * Customers can browse stores, search with filters, purchase products, and rate stores
 * Managers can manage stores, products, and inventory
-* The backend distributes data across multiple worker nodes for scalability
+* The backend distributes data across multiple worker nodes
 * A reducer node aggregates distributed results
 
-This system demonstrates core distributed systems concepts such as **request routing, parallel processing, and result aggregation**.
+The system demonstrates key distributed systems concepts such as:
+
+* request routing
+* parallel execution
+* data partitioning
+* result aggregation
 
 ---
 
-## 🧠 System Design
+## 🧠 System Architecture
 
-### Architecture Pattern
+```text
+                    ┌────────────────────┐
+                    │   Mobile / CLI     │
+                    │   Client Apps      │
+                    └─────────┬──────────┘
+                              │
+                              ▼
+                    ┌────────────────────┐
+                    │       Master       │
+                    │   (Coordinator)    │
+                    └─────────┬──────────┘
+                ┌─────────────┼─────────────┐
+                │             │             │
+                ▼             ▼             ▼
+         ┌──────────┐  ┌──────────┐  ┌──────────┐
+         │ Worker 1 │  │ Worker 2 │  │ Worker N │
+         └────┬─────┘  └────┬─────┘  └────┬─────┘
+              │              │              │
+              └──────┬───────┴───────┬─────┘
+                     ▼               ▼
+                ┌────────────────────────┐
+                │        Reducer         │
+                │   (Aggregation Node)   │
+                └──────────┬─────────────┘
+                           │
+                           ▼
+                       Response
+```
 
-* **Master–Worker–Reducer**
+---
 
-### Components
+## ⚙️ How It Works
 
-#### 🔹 Master Node
+### 🔹 Request Flow
 
-* Routes requests using **hash-based partitioning**
-* Coordinates communication between clients and workers
-* Handles both targeted and broadcast requests
+1. Client sends request → Master
+2. Master decides:
 
-#### 🔹 Worker Nodes
+   * **Single worker** → based on hash(store name)
+   * **All workers** → for search / allStores
+3. Workers process request
+4. Reducer aggregates results (if needed)
+5. Master sends response back to client
 
-* Store and manage data (stores, products, sales)
-* Execute business logic:
+---
 
-  * product updates
-  * purchases
+### 🔹 Data Distribution
+
+* Stores are distributed across workers using:
+
+  ```java
+  hash(storeName) % numberOfWorkers
+  ```
+* Ensures scalability and load distribution
+
+---
+
+## 🧩 System Components
+
+### 🧭 Master Node
+
+* Entry point of the system
+* Routes requests to workers
+* Handles aggregation responses
+
+---
+
+### ⚙️ Worker Nodes
+
+* Store and manage:
+
+  * stores
+  * products
+  * inventory
+* Execute:
+
+  * buy
+  * update
   * rating
   * filtering
 
-#### 🔹 Reducer Node
+---
 
-* Aggregates responses from multiple workers
-* Required for:
+### 🔄 Reducer Node
 
-  * global search
-  * retrieving all stores
+* Collects results from all workers
+* Combines them into a single response
+* Used for:
 
-#### 🔹 Client Applications
-
-* Customer interface (CLI / mobile app)
-* Manager/admin interface
+  * search
+  * allStores
 
 ---
 
-## ⚙️ Key Features
+### 📱 Applications
 
-### 👤 Customer Features
+#### 👤 Client App
 
-* View all stores
-* Search with filters:
-
-  * Price range ($, $$, $$$)
-  * Star rating range
-  * Food category
-* Purchase products
+* Browse stores
+* Search with filters
+* Buy products
 * Rate stores
 
-### 🧑‍💼 Manager Features
+#### 🧑‍💼 Manager App
 
-* Add store via JSON input
+* Add stores (via JSON)
+* Manage products
+* Update stock
+* View sales
+
+---
+
+## ✨ Features
+
+### Customer
+
+* View all stores
+* Search with:
+
+  * price range ($, $$, $$$)
+  * rating range
+  * category
+* Buy products
+* Rate stores
+
+---
+
+### Manager
+
+* Add store from JSON
 * Add/remove products
-* Update stock levels
-* Retrieve total sales per product
+* Update stock
+* Track product sales
 
 ---
 
 ## 🛠 Tech Stack
 
-* **Java**
-* **TCP Socket Programming**
-* **Multithreading**
-* **Object Serialization**
-* **Gson (JSON parsing)**
+* Java
+* TCP Socket Programming
+* Multithreading
+* Object Serialization
+* Gson (JSON parsing)
 
 ---
 
 ## 📂 Project Structure
 
-```
-distributed-food-ordering-platform/
+```text
+backend/
 │
-├── backend/
-│   ├── model/
-│   │   ├── store.java
-│   │   ├── product.java
-│   │   └── message.java
-│   │
-│   ├── network/
-│   │   ├── master.java
-│   │   ├── worker.java
-│   │   └── reducer.java
-│   │
-│   ├── app/
-│   │   ├── ClientApp.java
-│   │   └── ManagerApp.java
-│   │
-│   └── lib/
-│       └── gson-2.9.1.jar
+├── model/
+│   ├── Store.java
+│   ├── Product.java
+│   └── Message.java
 │
-├── mobile-app/
-│   └── (frontend project)
+├── network/
+│   ├── Master.java
+│   ├── Worker.java
+│   └── Reducer.java
+│
+├── app/
+│   ├── ClientApp.java
+│   └── ManagerApp.java
+│
+├── lib/
+│   └── gson-2.9.1.jar
 │
 ├── sample-data/
 │   ├── store.json
 │   └── product.json
 │
-├── docs/
-│   └── architecture.png
-│
-├── README.md
-└── .gitignore
+└── docs/
+    └── architecture.png
 ```
 
 ---
@@ -131,7 +206,7 @@ distributed-food-ordering-platform/
 
 ### 1. Compile
 
-```
+```bash
 javac -cp ".:lib/gson-2.9.1.jar" backend/**/*.java
 ```
 
@@ -139,59 +214,52 @@ javac -cp ".:lib/gson-2.9.1.jar" backend/**/*.java
 
 ### 2. Start Reducer
 
-```
-java reducer <reducer_port> <master_port> <number_of_workers>
+```bash
+java network.Reducer <reducer_port> <master_port> <num_workers>
 ```
 
 Example:
 
-```
-java reducer 6000 5000 2
+```bash
+java network.Reducer 6000 5000 2
 ```
 
 ---
 
 ### 3. Start Workers
 
-```
-java worker <worker_port> <reducer_port>
+```bash
+java network.Worker <worker_port> <reducer_port>
 ```
 
 Example:
 
-```
-java worker 7000 6000
-java worker 7001 6000
+```bash
+java network.Worker 7000 6000
+java network.Worker 7001 6000
 ```
 
 ---
 
 ### 4. Start Master
 
-```
-java master <master_port> <worker_port_1> <worker_port_2> ...
+```bash
+java network.Master <master_port> <worker_ports...>
 ```
 
 Example:
 
-```
-java master 5000 7000 7001
+```bash
+java network.Master 5000 7000 7001
 ```
 
 ---
 
 ### 5. Run Applications
 
-#### Customer App
-
-```
-java ClientApp 5000
-```
-
-#### Manager App
-
-```
-java ManagerApp 5000
+```bash
+java app.ClientApp 5000
+java app.ManagerApp 5000
 ```
 
 ---
@@ -222,57 +290,39 @@ java ManagerApp 5000
 
 ## 📚 Key Concepts Demonstrated
 
-* Distributed system design
-* Hash-based data partitioning
-* Parallel request handling
-* Aggregation via reducer pattern
-* Socket-based inter-process communication
-* Thread-based concurrency
+* Distributed systems architecture
+* Hash-based partitioning
+* Parallel processing
+* Aggregation via reducer
+* Socket communication
+* Concurrency with threads
 
 ---
 
 ## ⚖️ Design Trade-offs
 
-* **Sockets vs REST API**
-
-  * Used raw sockets for learning low-level networking
-  * Trade-off: less scalability compared to HTTP-based services
-
-* **In-memory storage**
-
-  * Faster performance
-  * Trade-off: no persistence or fault tolerance
-
-* **Hash-based partitioning**
-
-  * Simple and efficient
-  * Trade-off: uneven distribution if data is skewed
+| Decision           | Benefit             | Trade-off            |
+| ------------------ | ------------------- | -------------------- |
+| Raw sockets        | Low-level control   | Harder to scale      |
+| In-memory storage  | Fast                | No persistence       |
+| Hash partitioning  | Simple distribution | Possible imbalance   |
+| Thread-per-request | Easy concurrency    | Not optimal at scale |
 
 ---
 
 ## 🔮 Future Improvements
 
-* Replace sockets with REST (Spring Boot)
-* Add database persistence (PostgreSQL / MongoDB)
-* Introduce load balancing
-* Add fault tolerance and replication
-* Dockerize services
-* Add authentication and user accounts
-* Implement automated tests
+* REST API (Spring Boot)
+* Database (PostgreSQL / MongoDB)
+* Dockerization
+* Load balancing
+* Fault tolerance
+* Authentication system
+* Unit & integration tests
 
 ---
-
-## 💡 Why This Project Matters
-
-This project demonstrates:
-
-* Real-world **distributed backend architecture**
-* Strong understanding of **concurrency and networking**
-* Ability to design **scalable systems**
-* Full-stack thinking (backend + mobile frontend)
-
----
-
 
 ## 📜 Author
-  Spyrou Agamemnon-Ioannis
+ Spyrou Agamemnon-Ioannis
+
+MIT License
