@@ -1,0 +1,90 @@
+{
+    "StoreName": "Mailo's - The Pasta Project",
+    "Latitude": 37.9807,
+    "Longitude": 23.7283,
+    "FoodCategory": "italian",
+    "Stars": 4.7,
+    "NoOfVotes": 880,
+    "StoreLogo": "logos/mailos.png",
+    "Products": [
+      {
+        "ProductName": "mailo's carbonara",
+        "ProductType": "pasta",
+        "Available Amount": 200,
+        "Price": 6.9
+      },
+      {
+        "ProductName": "bolognese",
+        "ProductType": "pasta",
+        "Available Amount": 190,
+        "Price": 6.5
+      },
+      {
+        "ProductName": "chicken alfredo",
+        "ProductType": "pasta",
+        "Available Amount": 180,
+        "Price": 7.2
+      },
+      {
+        "ProductName": "pesto pasta",
+        "ProductType": "pasta",
+        "Available Amount": 170,
+        "Price": 6.8
+      },
+      {
+        "ProductName": "four cheese",
+        "ProductType": "pasta",
+        "Available Amount": 160,
+        "Price": 7
+      },
+      {
+        "ProductName": "vegan napoli",
+        "ProductType": "vegan",
+        "Available Amount": 140,
+        "Price": 6.4
+      },
+      {
+        "ProductName": "spicy nduja",
+        "ProductType": "pasta",
+        "Available Amount": 150,
+        "Price": 7.5
+      },
+      {
+        "ProductName": "truffle mushroom",
+        "ProductType": "pasta",
+        "Available Amount": 130,
+        "Price": 7.9
+      },
+      {
+        "ProductName": "garlic bread",
+        "ProductType": "side",
+        "Available Amount": 160,
+        "Price": 2.2
+      },
+      {
+        "ProductName": "parmesan sticks",
+        "ProductType": "side",
+        "Available Amount": 140,
+        "Price": 2.5
+      },
+      {
+        "ProductName": "soft drink (coke)",
+        "ProductType": "drink",
+        "Available Amount": 200,
+        "Price": 1.8
+      },
+      {
+        "ProductName": "sparkling water",
+        "ProductType": "drink",
+        "Available Amount": 180,
+        "Price": 1.5
+      },
+      {
+        "ProductName": "homemade lemonade",
+        "ProductType": "drink",
+        "Available Amount": 100,
+        "Price": 2.2
+      }
+    ]
+  }
+  

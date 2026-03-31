@@ -1,0 +1,102 @@
+{
+    "StoreName": "Shin Shush",
+    "Latitude": 37.9742,
+    "Longitude": 23.7321,
+    "FoodCategory": "asian",
+    "Stars": 4.8,
+    "NoOfVotes": 390,
+    "StoreLogo": "logos/shinshush.png",
+    "Products": [
+      {
+        "ProductName": "salmon nigiri (2pcs)",
+        "ProductType": "sushi",
+        "Available Amount": 120,
+        "Price": 4.2
+      },
+      {
+        "ProductName": "tuna sashimi (4pcs)",
+        "ProductType": "sushi",
+        "Available Amount": 100,
+        "Price": 6.5
+      },
+      {
+        "ProductName": "dragon roll",
+        "ProductType": "sushi_roll",
+        "Available Amount": 90,
+        "Price": 8.9
+      },
+      {
+        "ProductName": "spicy salmon roll",
+        "ProductType": "sushi_roll",
+        "Available Amount": 85,
+        "Price": 7.8
+      },
+      {
+        "ProductName": "veggie maki",
+        "ProductType": "sushi_roll",
+        "Available Amount": 100,
+        "Price": 6.2
+      },
+      {
+        "ProductName": "chicken katsu bao",
+        "ProductType": "bao",
+        "Available Amount": 80,
+        "Price": 4.5
+      },
+      {
+        "ProductName": "crispy duck bao",
+        "ProductType": "bao",
+        "Available Amount": 75,
+        "Price": 5
+      },
+      {
+        "ProductName": "gyoza (chicken - 5pcs)",
+        "ProductType": "dumpling",
+        "Available Amount": 90,
+        "Price": 5.5
+      },
+      {
+        "ProductName": "edamame with sea salt",
+        "ProductType": "starter",
+        "Available Amount": 100,
+        "Price": 3.2
+      },
+      {
+        "ProductName": "miso soup",
+        "ProductType": "starter",
+        "Available Amount": 110,
+        "Price": 2.8
+      },
+      {
+        "ProductName": "matcha mochi",
+        "ProductType": "dessert",
+        "Available Amount": 70,
+        "Price": 3.8
+      },
+      {
+        "ProductName": "bubble tea classic",
+        "ProductType": "drink",
+        "Available Amount": 120,
+        "Price": 4.5
+      },
+      {
+        "ProductName": "yuzu lemonade",
+        "ProductType": "drink",
+        "Available Amount": 100,
+        "Price": 3.5
+      },
+      {
+        "ProductName": "asahi beer (bottle)",
+        "ProductType": "drink",
+        "Available Amount": 90,
+        "Price": 4.2
+      },
+      {
+        "ProductName": "sparkling water",
+        "ProductType": "drink",
+        "Available Amount": 100,
+        "Price": 1.8
+      }
+    ]
+  }
+  

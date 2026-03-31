@@ -1,0 +1,102 @@
+{
+    "StoreName": "Coffee Island",
+    "Latitude": 37.9838,
+    "Longitude": 23.7275,
+    "FoodCategory": "cafe",
+    "Stars": 4.1,
+    "NoOfVotes": 430,
+    "StoreLogo": "logos/coffeeisland.png",
+    "Products": [
+      {
+        "ProductName": "espresso",
+        "ProductType": "coffee",
+        "Available Amount": 250,
+        "Price": 1.8
+      },
+      {
+        "ProductName": "freddo espresso",
+        "ProductType": "coffee",
+        "Available Amount": 300,
+        "Price": 2.2
+      },
+      {
+        "ProductName": "freddo cappuccino",
+        "ProductType": "coffee",
+        "Available Amount": 300,
+        "Price": 2.4
+      },
+      {
+        "ProductName": "cold brew",
+        "ProductType": "coffee",
+        "Available Amount": 150,
+        "Price": 3
+      },
+      {
+        "ProductName": "latte",
+        "ProductType": "coffee",
+        "Available Amount": 180,
+        "Price": 2.9
+      },
+      {
+        "ProductName": "filter coffee",
+        "ProductType": "coffee",
+        "Available Amount": 160,
+        "Price": 2.1
+      },
+      {
+        "ProductName": "greek coffee",
+        "ProductType": "coffee",
+        "Available Amount": 140,
+        "Price": 1.6
+      },
+      {
+        "ProductName": "hot chocolate",
+        "ProductType": "drink",
+        "Available Amount": 100,
+        "Price": 2.5
+      },
+      {
+        "ProductName": "lemon iced tea",
+        "ProductType": "drink",
+        "Available Amount": 120,
+        "Price": 2.3
+      },
+      {
+        "ProductName": "orange juice",
+        "ProductType": "drink",
+        "Available Amount": 90,
+        "Price": 2.4
+      },
+      {
+        "ProductName": "cheese pie",
+        "ProductType": "pastry",
+        "Available Amount": 80,
+        "Price": 2.5
+      },
+      {
+        "ProductName": "turkey sandwich",
+        "ProductType": "snack",
+        "Available Amount": 70,
+        "Price": 3.2
+      },
+      {
+        "ProductName": "vegan energy bar",
+        "ProductType": "snack",
+        "Available Amount": 60,
+        "Price": 2
+      },
+      {
+        "ProductName": "mini croissant chocolate",
+        "ProductType": "pastry",
+        "Available Amount": 100,
+        "Price": 1.2
+      },
+      {
+        "ProductName": "bottled water 500ml",
+        "ProductType": "drink",
+        "Available Amount": 200,
+        "Price": 0.5
+      }
+    ]
+  }
+  
