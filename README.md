@@ -325,4 +325,3 @@ java app.ManagerApp 5000
 ## 📜 Author
  Spyrou Agamemnon-Ioannis
 
-MIT License
