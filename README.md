@@ -176,14 +176,14 @@ The system demonstrates key distributed systems concepts such as:
 backend/
 │
 ├── model/
-│   ├── Store.java
-│   ├── Product.java
-│   └── Message.java
+│   ├── store.java
+│   ├── product.java
+│   └── message.java
 │
 ├── network/
-│   ├── Master.java
-│   ├── Worker.java
-│   └── Reducer.java
+│   ├── master.java
+│   ├── worker.java
+│   └── reducer.java
 │
 ├── app/
 │   ├── ClientApp.java
@@ -215,13 +215,13 @@ javac -cp ".:lib/gson-2.9.1.jar" backend/**/*.java
 ### 2. Start Reducer
 
 ```bash
-java network.Reducer <reducer_port> <master_port> <num_workers>
+java network.reducer <reducer_port> <master_port> <num_workers>
 ```
 
 Example:
 
 ```bash
-java network.Reducer 6000 5000 2
+java network.reducer 6000 5000 2
 ```
 
 ---
@@ -229,14 +229,14 @@ java network.Reducer 6000 5000 2
 ### 3. Start Workers
 
 ```bash
-java network.Worker <worker_port> <reducer_port>
+java network.worker <worker_port> <reducer_port>
 ```
 
 Example:
 
 ```bash
-java network.Worker 7000 6000
-java network.Worker 7001 6000
+java network.worker 7000 6000
+java network.worker 7001 6000
 ```
 
 ---
@@ -244,13 +244,13 @@ java network.Worker 7001 6000
 ### 4. Start Master
 
 ```bash
-java network.Master <master_port> <worker_ports...>
+java network.master <master_port> <worker_ports...>
 ```
 
 Example:
 
 ```bash
-java network.Master 5000 7000 7001
+java network.master 5000 7000 7001
 ```
 
 ---
