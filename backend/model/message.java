@@ -56,12 +56,12 @@ class message implements Serializable{
     }
 
     public void set_response(String a){
-        responce=a;
+        response=a;
     }
 
     public String toString(){
       
-        return responce;
+        return response;
 
     }
 

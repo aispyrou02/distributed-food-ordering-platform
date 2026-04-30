@@ -87,7 +87,7 @@ public class worker {
         public void send_resp(String output,int code) throws IOException{
             message resp=new message("resp");
             resp.set_resp(true);
-            resp.set_responce(output);
+            resp.set_response(output);
             resp.setCode(code);
             out.writeObject(resp);
             out.flush();

@@ -165,7 +165,10 @@ class ClientApp{
 
         System.out.println("Wanna add food category? Y or N");
         msg = sc.nextLine();
-
+        
+        if (msg.equals("N") || msg.equals("n")) {
+            req.addData("any");
+        }
 
         while (msg.equals("Y") || msg.equals("y")) {
 

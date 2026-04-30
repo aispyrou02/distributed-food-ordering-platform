@@ -83,8 +83,8 @@ public class store  implements Serializable{
     public void remove_product(String p){
         int i=-1;
         for (product pr:products){
+            i++;
             if (pr.get_name().equals(p)){
-                i++;
                 break;
             }
         }
@@ -99,8 +99,8 @@ public class store  implements Serializable{
         int i=-1;
         boolean flag=false;
         for (product pr:products){
+            i++;
             if (pr.get_name().equals(p)){
-                i++;
                 flag=true;
                 break;
                 
@@ -115,8 +115,8 @@ public class store  implements Serializable{
     public int total_sales(String p ){
         int i=-1;
         for (product pr:products){
+            i++;
             if (pr.get_name().equals(p)){
-                i++;
                 break;
             }
         }
@@ -151,13 +151,13 @@ public class store  implements Serializable{
         if(flag){
             int i=-1;           
             for (product pr:products){
+                i++;
                 if (pr.get_name().equals(pname)){
-                    i++;
                     break;                    
                 }
             }
             
-            products.get(i).add_sales(amounMath.abs(amount));
+            products.get(i).add_sales(Math.abs(amount));
         }
         return flag;
     }
