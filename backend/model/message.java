@@ -11,7 +11,7 @@ import com.google.gson.*;
 
 
 
-class message implements Serializable{
+public class message implements Serializable{
 
     private static final long serialVersionUID = 1L;
 
