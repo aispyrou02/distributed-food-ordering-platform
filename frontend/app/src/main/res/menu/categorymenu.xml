@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:title="Asian"
+        android:id="@+id/asian"/>
+    <item
+        android:title="Italian"
+        android:id="@+id/italian"/>
+    <item
+        android:title="Coffee"
+        android:id="@+id/coffee"/>
+    <item
+        android:title="Burger"
+        android:id="@+id/burger"/>
+    <item
+        android:title="Souvlaki"
+        android:id="@+id/souvlaki"/>
+    <item
+        android:title="Pizza"
+        android:id="@+id/pizza"/>
+    <item
+        android:title="Bakery"
+        android:id="@+id/bakery"/>
+    <item
+        android:title="Sandwich"
+        android:id="@+id/sawndwich"/>
+
+</menu>

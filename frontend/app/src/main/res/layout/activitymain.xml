@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_primary">
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/store_recycle"
+        android:layout_width="371dp"
+        android:layout_height="665dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.856" />
+
+    <TextView
+        android:id="@+id/welcome_text"
+        android:layout_width="406dp"
+        android:layout_height="97dp"
+        android:gravity="center_vertical"
+        android:maxLines="2"
+        android:paddingStart="16dp"
+        android:text="Welcome NAME"
+        android:textStyle="bold"
+        app:autoSizeMaxTextSize="30sp"
+        app:autoSizeMinTextSize="12sp"
+        app:autoSizeStepGranularity="1sp"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintBottom_toTopOf="@+id/store_recycle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.938" />
+
+    <Button
+        android:id="@+id/adress_button"
+        android:layout_width="193dp"
+        android:layout_height="63dp"
+        android:maxLines="2"
+        android:onClick="click_adress"
+        android:text="ADRESS"
+        android:textSize="25dp"
+        app:autoSizeMaxTextSize="24sp"
+        app:autoSizeMinTextSize="12sp"
+        app:autoSizeStepGranularity="1sp"
+        app:autoSizeTextType="uniform"
+        app:cardCornerRadius="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/welcome_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.073"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.728" />
+
+    <ImageButton
+        android:id="@+id/filter_button"
+        android:layout_width="81dp"
+        android:layout_height="64dp"
+        android:adjustViewBounds="false"
+        android:onClick="click_filters"
+        android:scaleType="fitXY"
+        app:cardCornerRadius="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/welcome_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.663"
+        app:layout_constraintStart_toEndOf="@+id/adress_button"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.741"
+        app:srcCompat="@drawable/filters" />
+</androidx.constraintlayout.widget.ConstraintLayout>

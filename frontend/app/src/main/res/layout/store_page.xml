@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_primary">
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/product_recycler"
+        android:layout_width="376dp"
+        android:layout_height="478dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.542"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.682" />
+
+    <Button
+        android:id="@+id/buy_button"
+        android:layout_width="191dp"
+        android:layout_height="55dp"
+        android:onClick="click_completeBuy"
+        android:text="Buy"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/product_recycler"
+        app:layout_constraintVertical_bias="0.554" />
+
+    <TextView
+        android:id="@+id/sname"
+        android:layout_width="268dp"
+        android:layout_height="43dp"
+        android:gravity="left|center"
+        android:paddingStart="25dp"
+        android:maxLines="1"
+        android:text="Overoll"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        app:autoSizeMaxTextSize="24sp"
+        app:autoSizeMinTextSize="12sp"
+        app:autoSizeStepGranularity="1sp"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintBottom_toTopOf="@+id/product_recycler"
+        app:layout_constraintEnd_toStartOf="@+id/srating"
+        app:layout_constraintHorizontal_bias="0.548"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/simage"
+        app:layout_constraintVertical_bias="0.413" />
+
+    <TextView
+        android:id="@+id/srating"
+        android:layout_width="96dp"
+        android:layout_height="43dp"
+        android:gravity="center"
+        android:text="4.5"
+        android:textSize="23sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/product_recycler"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.907"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/simage"
+        app:layout_constraintVertical_bias="0.413" />
+
+    <ImageView
+        android:id="@+id/simage"
+        android:layout_width="373dp"
+        android:layout_height="177dp"
+        android:background="@drawable/rounded_image"
+        android:clipToOutline="true"
+        android:gravity="center"
+        android:outlineProvider="background"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toTopOf="@+id/product_recycler"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        tools:src="@tools:sample/backgrounds/scenic" />
+
+    <ImageButton
+        android:id="@+id/back_button_store"
+        android:layout_width="44dp"
+        android:layout_height="37dp"
+        android:onClick="click_back"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="@+id/simage"
+        app:layout_constraintEnd_toEndOf="@+id/simage"
+        app:layout_constraintHorizontal_bias="0.039"
+        app:layout_constraintStart_toStartOf="@+id/simage"
+        app:layout_constraintTop_toTopOf="@+id/simage"
+        app:layout_constraintVertical_bias="0.061"
+        app:srcCompat="@drawable/back" />
+</androidx.constraintlayout.widget.ConstraintLayout>
